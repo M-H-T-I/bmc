@@ -1,5 +1,5 @@
 <script>
-
+    let bullshit = false;
 </script>
 
 <div id="parent-container">
@@ -50,9 +50,24 @@
                 <p>11:00 am - 1:00 pm</p>
                 <p>7:30 pm - 9:30 pm</p>
             </div>
-        </div>  
+        </div>
+
     </div>
-    
+    <hr id="seperator"/>
+
+    <div id="socials">
+        <p class="inter-400">Copyright Bashir Medical Complex 2030 </p>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/search/top?q=bmc%20bashir%20medical%20center"> 
+                    <img src="/images/socials/fb.svg" alt="logo of facebook" id="fb"/> 
+            </a>
+            </li>
+            
+            <li><a href="https://www.instagram.com/bashirmedicalcenter/"><img src="/images/socials/insta.svg" alt="logo of youtube" id="insta"></a></li>
+        </ul>
+    </div>
+
 </div>
 
 
@@ -66,7 +81,8 @@
         grid-template-areas: 
         "one one one"
         "two three four"
-        "five five five";
+        "five five five"
+        "six six six";
 
         background-color: black;
 
@@ -95,6 +111,36 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #seperator{
+        grid-area: five;
+    }
+
+    #socials{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+        
+        width: 100%;
+
+        margin-top: 20px;
+
+        grid-area: six;
+    }
+
+    #insta{
+        width: 30px;
+    }
+    #fb{
+        width:22px;
+    }
+
+    #socials ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
     }
 
     /* --- Classes --- */
