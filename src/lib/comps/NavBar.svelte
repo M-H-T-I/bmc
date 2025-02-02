@@ -1,6 +1,6 @@
 <script lang="ts">
-    let routeText: string[] = ["Home", "Departments", "Other Services", "About", "Contact Us"]
-    let routeLink: string[] = ["", "departments", "other-services", "about", "contact"]
+    let routeText: string[] = ["Home", "Departments", "Other Services", "About Us", "Contact Us"]
+    let routeLink: string[] = ["", "departments", "other-services", "about-us", "contact"]
 
 </script>
 
