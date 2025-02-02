@@ -35,7 +35,7 @@
 <section id="services">
 
     <h2 class="libre-baskerville-regular">What Do We Do?</h2>
-    <h6 class="inter-100">Get you on the right path to heal.</h6>
+    <h6 class="inter-300">Get you on the right path to heal.</h6>
 
     <ServiceCard />
     
@@ -70,7 +70,7 @@
 
 <section id="about-us" bind:this={aboutUsRef}>
     <h2 class="libre-baskerville-regular">About Us</h2>
-    <h6 class="inter-100">Spoilers: We are people who help other people.</h6>
+    <h6 class="inter-300">Spoilers: We are people who help other people.</h6>
 
     <img src="/images/about-us.png" alt="the bmc team">
 

@@ -33,7 +33,7 @@
 <style>
 
     #parentDiv{
-        min-height: 90vh;
+        min-height: 100vh;
 
         display: flex;
         justify-content: space-between;
