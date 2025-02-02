@@ -22,14 +22,14 @@
         </ul>
     </div>
 
-    <div id="contact-details">
+    <div id="contact-details" class="inter-300">
         <h6 class="inter-300">Contact Details</h6>
 
         <div class="contact-info location">
             <span class="material-symbols-outlined">
                 pin_drop
             </span>
-            <p>Shareef Market Stop, Main Walton Rd, opposite Toyota Cantt Motors, Madina Colony, Lahore, Punjab 54600</p>
+            <p class="inter-300">Shareef Market Stop, Main Walton Rd, opposite Toyota Cantt Motors, Madina Colony, Lahore, Punjab 54600</p>
         </div>
 
         <div class="contact-info">
@@ -45,7 +45,7 @@
 
         <div class="timing inter-300">
             <h6>Timings: </h6>
-            <div>
+            <div class="inter-300">
                 <p>Monday-Friday</p>
                 <p>11:00 am - 1:00 pm</p>
                 <p>7:30 pm - 9:30 pm</p>
