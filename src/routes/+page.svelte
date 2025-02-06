@@ -4,6 +4,7 @@
     import ServiceCard from "$lib/comps/home-only/ServiceCard.svelte";
     import CredBlock from "$lib/comps/home-only/credibility/CredBlock.svelte";
     import Contact from "$lib/comps/contact section/Contact.svelte";
+    import Title from "$lib/comps/Title.svelte";
 
     let aboutUsRef: HTMLElement;
 
@@ -19,36 +20,16 @@
 <main>
 
     <div>
-        <h1 class="libre-baskerville-bold">
-            Helping People
-        </h1>        
-
-        <h4 class="inter-100">Nothing more nothing less.</h4>
+        <Title page = "Home" subtitle = "Years of service. Thousands of lives saved." titleText = "Cutting Edge Medical Expertise"/>
     </div>
 
-    <a href="#about-us" onclick={handleLocalNavigation}>
+    <!-- <a href="#about-us" onclick={handleLocalNavigation}>
         <MoreInfoBtn /> 
-    </a>  
+    </a>   -->
 
 </main>
 
-<section id="services">
-
-    <h2 class="libre-baskerville-regular">What Do We Do?</h2>
-    <h6 class="inter-300">Get you on the right path to heal.</h6>
-
-    <ServiceCard />
-    
-</section>
-
-<section id="partners">
-    <h2 class="libre-baskerville-regular">Our Partners</h2>
-    <img src="/images/hameed-latif.png" alt="logo saying hameed latif laboratories">
-</section>
-
-
 <section id="credibility-figures">
-    <h2 class="libre-baskerville-regular">Why Trust Us?</h2>
     <div id="cred-grid">
 
         <CredBlock figure="50000+" description = "patients saved"/>
@@ -68,6 +49,20 @@
     </div>
 </section>
 
+<section id="services">
+
+    <h2 class="libre-baskerville-regular">What Do We Do?</h2>
+    <h6 class="inter-300">Get you on the right path to heal.</h6>
+
+    <ServiceCard />
+    
+</section>
+
+<section id="partners">
+    <h2 class="libre-baskerville-regular">Our Partners</h2>
+    <img src="/images/hameed-latif.png" alt="logo saying hameed latif laboratories">
+</section>
+
 <section id="about-us" bind:this={aboutUsRef}>
     <h2 class="libre-baskerville-regular">About Us</h2>
     <h6 class="inter-300">Spoilers: We are people who help other people.</h6>
@@ -80,11 +75,10 @@
 
         We have a pretty interesting story. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus nunc eget felis ultrices cursus eget vitae ligula. Aenean bibendum  bibendum quam id finibus. Nam a est finibus, fermentum elit faucibus,  maximus turpis. Morbi vel arcu arcu. Praesent tristique placerat  egestas. Ut sed est quam. Etiam ac viverra ligula, vitae vehicula justo. Cras quis sagittis nisi. Proin bibendum, massa sed sollicitudin mollis, ipsum mauris volutpat nisi, non dictum lectus sapien a mi.
         Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed  tincidunt molestie ex dictum pharetra. Pellentesque molestie augue ut  porttitor elementum. Nam porta dignissim sapien, eu ornare nisl  consectetur sed. Suspendisse finibus, metus nec luctus egestas, purus  nisi sollicitudin metus, quis vestibulum leo felis non magna. 
-       Nunc vel  dapibus felis, yoop ion ni non efficitur turpis. Maecenas vel rutrum nisi. Duis  dolor elit, congue non arcu nec, aliquam consectetur purus. Duis  vehicula augue vulputate velit finibus, eu sollicitudin metus uoioi i9aisk  .
-    
+       Nunc vel  dapibus felis, yoop ion ni non efficitur turpis.    
     </p>
 
-    <GeneralBtn linkPath = "/about-us" linkText = "About Us"/>
+    <GeneralBtn linkPath = "/about-us" linkText = "Read More"/>
 
 </section>
 
@@ -97,7 +91,7 @@
     }
 
     h1{
-        font-size: 8.4rem;
+        font-size: 6.4rem;
         margin-bottom: 1%;
     }
 
@@ -148,7 +142,8 @@
 
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        align-items: center;
+        justify-content: center;
 
         color: white;
 
@@ -169,15 +164,12 @@
         align-items: center;
         flex-direction: column;
 
-        padding: 50px 0 40px 0  ;
     } 
 
     #credibility-figures{
-        
-        padding-top: 40px;
-        padding-bottom: 40px;
 
-        background-color: #110909;
+        margin: 20px 0 150px 0 ;
+
         color: white;
 
         display: flex;
@@ -194,8 +186,10 @@
         padding: 20px 0 100px 0;
     }
     /* ---- SECTION SPECIFIC ---- */
-    main a{
-        text-decoration: none;
+    main div{
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 20px;
+        border-radius: 5px;
     }
 
     #about-us img{
