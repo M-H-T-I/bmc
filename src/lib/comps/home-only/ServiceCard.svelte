@@ -16,7 +16,7 @@
             </div>
 
             <p class="inter-300">
-                Offering world class healthcare to people. The matter of keeping our patients healthy is a mission the team at BMC does its utmost to fulfill each an everyday. We aren’t magicians or anything; healing you is your body’s job. We just help to speed the process up. There are many clinical departments here at BMC. Each one is handled by medical professional who are acknowledged as experts in their respective fields. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra aliquet dui, cursus semper est venenatis et. Maecenas in porttitor lacus, et lobortis sapien. Donec libero mauris, tincidunt ut bibendum quis, dignissim ac nunc. Donec dapibus sapien et tortor bibendum, a ullamcorper urna pellentesque. Phasellus lobortis id quam quis tempor. Integer elementum hendrerit lacus, vitae vestibulum purus laoreet at. Aliquam non felis in velit lobortis tincidunt ut nec nulla. Donec non condimentum ligula.
+                Offering world class healthcare to people. The matter of keeping our patients healthy is a mission the team at BMC does its utmost to fulfill each an everyday. Donec libero mauris, tincidunt ut bibendum quis, dignissim ac nunc. Donec dapibus sapien et tortor bibendum, a ullamcorper urna pellentesque. Phasellus lobortis id quam quis tempor. Integer elementum hendrerit lacus, vitae vestibulum purus laoreet at. Aliquam non felis in velit lobortis tincidunt ut nec nulla. Donec non condimentum ligula.
             </p>
     
             <GeneralBtn linkText= "Departments" linkPath = "/departments" />
@@ -40,7 +40,7 @@
             </div>
 
             <p class="inter-300">
-                Offering world class healthcare to people. The matter of keeping our patients healthy is a mission the team at BMC does its utmost to fulfill each an everyday. We aren’t magicians or anything; healing you is your body’s job. We just help to speed the process up. There are many clinical departments here at BMC. Each one is handled by medical professional who are acknowledged as experts in their respective fields. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin viverra aliquet dui, cursus semper est venenatis et. Maecenas in porttitor lacus, et lobortis sapien. Donec libero mauris, tincidunt ut bibendum quis, dignissim ac nunc. Donec dapibus sapien et tortor bibendum, a ullamcorper urna pellentesque. Phasellus lobortis id quam quis tempor. Integer elementum hendrerit lacus, vitae vestibulum purus laoreet at. Aliquam non felis in velit lobortis tincidunt ut nec nulla. Donec non condimentum ligula.
+                Offering world class healthcare to people. The matter of keeping our patients healthy is a mission the team at BMC does its utmost to fulfill each an everyday. Donec libero mauris, tincidunt ut bibendum quis, dignissim ac nunc. Donec dapibus sapien et tortor bibendum, a ullamcorper urna pellentesque. Phasellus lobortis id quam quis tempor. Integer elementum hendrerit lacus, vitae vestibulum purus laoreet at. Aliquam non felis in velit lobortis tincidunt ut nec nulla. Donec non condimentum ligula.
             </p>
     
             <GeneralBtn linkText= "Other Services" linkPath = "/other-services" />
@@ -61,6 +61,7 @@
         flex-direction: column;
 
         width: 80%;
+        
 
         padding-bottom: 100px;
     }
@@ -77,6 +78,7 @@
 
     img{
         min-width: 40%;
+        border-radius: 5px;
     }
 
 
@@ -86,7 +88,8 @@
     }
 
     p{
-        width: 100%;
+        width: 70%;
+        text-align: center;
     }
 
     .text-content{

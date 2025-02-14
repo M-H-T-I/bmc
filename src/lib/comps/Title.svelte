@@ -6,7 +6,7 @@
 
 <div class = "inter-300">
         
-    <h3>
+    <h3 class="inter-300">
         {page}
     </h3>
 
@@ -14,7 +14,7 @@
         {titleText}
     </h1>
 
-    <h3 style:color = "#2F2F2F">
+    <h3 style:color = "#2F2F2F" class="inter-300">
         {subtitle}
     </h3>
 
