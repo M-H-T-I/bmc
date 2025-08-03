@@ -1,5 +1,6 @@
 <script lang="ts">
     import {fly} from "svelte/transition";
+    let {scrollTo} = $props()
 
     let hovering: boolean = $state(false);
 
@@ -7,9 +8,16 @@
         hovering = !hovering;
     }
 
+    function handleLocalNavigation(event: Event){
+
+        event.preventDefault();
+        scrollTo.scrollIntoView({behavior:"smooth"});
+
+    }
+
 </script>
 
-<div onmouseenter={toggleHover} onmouseleave={toggleHover} role="button" tabindex="0">
+<button onmouseenter={toggleHover} onmouseleave={toggleHover} role="button" tabindex="0" onclick={handleLocalNavigation}>
 
     {#if !hovering}
 
@@ -25,18 +33,20 @@
 
     {:else}
 
-    <span class="inter-400 content" in:fly={{duration: 800, y: 200}}>More Info</span>
+    <span class="inter-400 content" in:fly={{duration: 800, y: 200}}>Departments</span>
  
     {/if}
 
-</div> 
+    </button> 
 
 <style>
 
-    div{
+    button{
 
-        width: 80px;
-        height: 80px;
+        border: none;
+
+        width: 120px;
+        height: 40px;
 
         display: flex;
         flex-direction: column;
@@ -49,14 +59,15 @@
         margin-right: auto;
 
         color: white;
-        background-color: rgba(000, 000, 000, 70%);
+        background-color: black;
         
-        border-radius: 50%;
+        border-radius: 8px;
         
+        cursor: pointer;
     }
 
     .content{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .icon{
@@ -71,7 +82,7 @@
         }
 
         50%{
-            translate: 0 10px;
+            translate: 0 8px;
         }
 
         100% {

@@ -22,6 +22,9 @@
 
         transition: all ease-in 200ms;
 
+        font-weight: 400;
+
+
     }
 
     .emphasized{
@@ -42,6 +45,7 @@
         border: 1px solid black;
         background-color: transparent;
         color: black;
+        font-size: 1.5rem;
         
     }
 

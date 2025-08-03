@@ -6,14 +6,7 @@
     import Title from "$lib/comps/Title.svelte";
     import BtnDiv from "$lib/comps/BtnDiv.svelte";
 
-    let aboutUsRef: HTMLElement;
-
-    function handleLocalNavigation(event: Event){
-
-        event.preventDefault();
-        aboutUsRef.scrollIntoView({behavior:"smooth"});
-
-    }
+    
 
 </script>
 
@@ -29,28 +22,23 @@
     </div>
 
     
-    <!-- <a href="#about-us" onclick={handleLocalNavigation}>
-        <MoreInfoBtn /> 
-    </a>   -->
 
 </main>
 
 <section id="credibility-figures">
     <div id="cred-grid">
 
-        <CredBlock figure="50000+" description = "patients saved"/>
+        <CredBlock figure="50000" description = "patients saved"/>
 
-        <CredBlock figure="32+" description = "years of service"/>
+        <CredBlock figure="32" description = "years of service"/>
 
-        <CredBlock figure="15+" description = "departments"/>
+        <CredBlock figure="15" description = "departments"/>
 
-        <CredBlock figure="100%" description = "patients saved"/>
+        <CredBlock figure="100" description = "patients saved"/>
 
-        <CredBlock figure="15+" description = "trusted recognitions"/>
+        <CredBlock figure="15" description = "trusted recognitions"/>
 
-        <CredBlock figure="5+" description = "platforms acknowledge us"/>
-
-
+        <CredBlock figure="5" description = "platforms acknowledge us"/>
 
     </div>
 </section>
@@ -70,7 +58,7 @@
     <img src="/images/hameed-latif.png" alt="logo saying hameed latif laboratories">
 </section> -->
 
-<section id="about-us" bind:this={aboutUsRef}>
+<section id="about-us">
 
     <Title titleText = "Our Story" subtitle = "Here's a sneak peak" page = "Home"/>
 

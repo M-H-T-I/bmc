@@ -1,4 +1,5 @@
 <script>
+    
     let { page, titleText, subtitle} = $props();
 
 </script>

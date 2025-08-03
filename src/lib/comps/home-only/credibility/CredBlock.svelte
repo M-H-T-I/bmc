@@ -1,10 +1,12 @@
 <script lang="ts">
     // figure should be integer
     let {figure, description} = $props();
+
+    
 </script>
 
 <div>
-    <span class="figure inter-700">{figure}</span>
+    <span class="figure inter-700">{figure}+</span>
     <span class="description inter-400">{description}</span>
 </div>
 
