@@ -15,7 +15,26 @@
 
     </header>
 
-    <Service name = "ureter replacement"/>
+    <section id="services">
+
+        <p class="inter-300">Services we provide:</p>
+
+        <div id="service-grid">
+            {#each entry.pageInfo.serviceList as service}
+                <Service name = {service} />
+            {/each}
+        </div>
+      
+
+    </section>
+
+    <section id="doctor-grid">
+
+        {#each entry.pageInfo.doctorList as doctor}
+            
+        {/each}
+
+    </section>
 
 <style>
 
@@ -35,6 +54,18 @@
 
     p{
         font-size: 1.5rem;
+    }
+
+    #services{
+        padding: 20px;
+
+    }
+
+    #service-grid{
+        display: flex;
+        gap: 10px;
+        margin: 20px 0 10px 0;
+
     }
 
 </style>

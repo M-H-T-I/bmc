@@ -6,15 +6,17 @@
 </script>
 
     <div>
-        <p class="inter-300">{name}</p>
+        <p class="inter-500">{name}</p>
     </div>
 
 
 <style>
 
     div{
-        width: 60px;
-        height: 30px;
+        max-width: fit-content;
+        max-height: 40px;
+
+        padding: 10px;
 
         border: 1px solid black;
         border-radius: 10px;
