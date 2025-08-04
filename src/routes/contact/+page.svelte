@@ -2,7 +2,7 @@
     import Contact from "$lib/comps/contact section/Contact.svelte";
 </script>
 
-<Contact />
+<Contact page="Contact Us"/>
 
 <style>
      :global(h2){

@@ -3,12 +3,14 @@
     import BtnDiv from "$lib/comps/BtnDiv.svelte";
     import Title from "../Title.svelte";
 
+    let {page} = $props();
+
 </script>
 
 <div id="parentDiv">
     <div id="text">
 
-     <Title titleText = "Get In Touch" subtitle = "Visit us or call us." page = "Home"/>
+     <Title titleText = "Get In Touch" subtitle = "Visit us or call us." page = {page}/>
 
     <BtnDiv />
     

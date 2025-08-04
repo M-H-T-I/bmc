@@ -11,7 +11,7 @@
 <div id="parentDiv" in:fly={{y:20, duration: 200}} out:fly = {{y: 20, duration: 200}}>
     <div id="overlay">
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217873.2748292922!2d74.13756511068868!3d31.434235270605214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905cf95969827%3A0x3c629a331caa648a!2sBMC%20-%20Bashir%20Medical%20Complex!5e0!3m2!1sen!2s!4v1738467843974!5m2!1sen!2s" width="40%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217873.2748292922!2d74.13756511068868!3d31.434235270605214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905cf95969827%3A0x3c629a331caa648a!2sBMC%20-%20Bashir%20Medical%20Complex!5e0!3m2!1sen!2s!4v1738467843974!5m2!1sen!2s" width="40%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map to physical address"></iframe>
     
         <div id="text-parent-div">
             <h2 class="libre-baskerville-regular">Our Location</h2>

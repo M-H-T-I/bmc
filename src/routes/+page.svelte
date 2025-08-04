@@ -90,7 +90,7 @@
 
 </section>
 
-<Contact />
+<Contact page="Home"/>
 
 <style>
 
@@ -123,10 +123,13 @@
 
         width: 35%;
 
+    }
+
+    p{
+        
         margin: 30px 0;
 
     }
-
     /* ---- SECTIONS ---- */ 
     
     main{

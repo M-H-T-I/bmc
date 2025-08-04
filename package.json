@@ -12,11 +12,11 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/kit": "^2.27.0",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
-		"svelte": "^5.0.0",
+		"svelte": "^5.37.3",
 		"svelte-check": "^4.0.0",
-		"typescript": "^5.0.0",
+		"typescript": "^5.9.2",
 		"vite": "^5.4.11"
 	}
 }
