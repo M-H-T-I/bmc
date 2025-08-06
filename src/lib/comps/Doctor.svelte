@@ -10,7 +10,7 @@
                 <img src={imgPath} alt={imgAlt}>
             </div>
 
-            <p class="inter-300">{name}</p>
+            <p class="inter-400">{name}</p>
 
         </div>
     </a>
@@ -33,7 +33,6 @@
         flex-direction: column;
         align-items: center;
 
-        max-width: 120px;
     }
 
     #image-container{
@@ -41,12 +40,13 @@
     }
 
     img{
-        width: 100%;
         border-radius: 50%;
+        max-width: 110px;
+        height: 100px;
     }
 
     p{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     
 </style>
