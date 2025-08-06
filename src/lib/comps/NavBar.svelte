@@ -129,7 +129,7 @@
         ul{
 
             position: fixed;
-            width: 100%;
+            width: 100vw;
             height: 100vh;
             flex-direction: column;
             position:absolute;
