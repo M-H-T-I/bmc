@@ -55,11 +55,13 @@
     }
     h2{
         font-size: 4.8rem;
+        text-align: center;
     }
 
     h4{
         font-size: 2.6rem;
         opacity: 0.8;
+        text-align: center;
     }
     h5{
         margin-top: 20px;
@@ -83,8 +85,8 @@
 
     #parentDiv{
         
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         background-color: rgba(0, 0,0, 0.8);
 
         position: fixed;
@@ -125,6 +127,34 @@
     }   
 
 
+    @media(width < 1200px){
+
+        p, h5{
+            text-align: center;
+        }
+    }
+
+    @media(width < 850px){
+
+        #overlay{
+            height: 90vh;
+        }
+        iframe{
+            position:absolute;
+            bottom: 0;
+
+            margin-top: 40px;
+
+            width: 100%;
+            height: 300px;
+            border-radius: 0 0 10px 10px;
+
+        }
+
+        p{
+            width: 100%;
+        }
+    }
 
 
 </style>
