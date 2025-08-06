@@ -7,6 +7,8 @@
     
     <div id="departments-card">
 
+        <img src="/images/services-home.png" alt="doctor talking to his patient" />
+
         <div class="text-content">
 
             <div class="header">
@@ -23,7 +25,6 @@
     
         </div>
 
-        <img src="/images/services-home.png" alt="doctor talking to his patient" />
 
     </div>
 
@@ -40,7 +41,9 @@
             </div>
 
             <p class="inter-300">
-                Offering world class healthcare to people. The matter of keeping our patients healthy is a mission the team at BMC does its utmost to fulfill each an everyday. Donec libero mauris, tincidunt ut bibendum quis, dignissim ac nunc. Donec dapibus sapien et tortor bibendum, a ullamcorper urna pellentesque. Phasellus lobortis id quam quis tempor. Integer elementum hendrerit lacus, vitae vestibulum purus laoreet at. Aliquam non felis in velit lobortis tincidunt ut nec nulla. Donec non condimentum ligula.
+                Offering world class healthcare to people. The matter of keeping our patients healthy is a mission the team at BMC does its utmost to fulfill each an everyday. Donec libero mauris, tincidunt ut bibendum quis, dignissim ac nunc. Donec dapibus sapien et tortor bibendum, a ullamcorper urna pellentesque. 
+                Phasellus lobortis id quam quis tempor. Integer elementum hendrerit lacus, vitae vestibulum purus laoreet at. Aliquam non felis in velit lobortis tincidunt ut nec nulla. Donec non condimentum ligula. Ambaa and ausajcsa hdoaj apdaoiuadc daj asijd uwas pI awa s asawhogn out yot seae odhsan boillo y.
+                asjajwisj aisaj dpjoid cofseand brihgn shugea.
             </p>
     
             <GeneralBtn linkText= "Other Services" linkPath = "/other-services" />
@@ -60,14 +63,15 @@
 
         flex-direction: column;
 
-        width: 80%;
+        width: 100%;
         
 
-        padding-bottom: 100px;
+        padding: 30px;
     }
 
     #departments-card, #other-services-card{
         display: flex;
+        gap: 30px;
 
         margin: 40px 0 0 0 ;
     }   
@@ -76,8 +80,12 @@
         margin: 100px 0 0 0;
     }
 
+    #departments-card img{
+        float: right;
+    }
+
     img{
-        min-width: 40%;
+        max-width: 600px;
         border-radius: 5px;
     }
 
@@ -85,16 +93,17 @@
     h3{
         width: 100%;
         text-align: center;
+        margin-bottom: 30px;
     }
 
     p{
-        width: 70%;
+        width: 60%;
         text-align: center;
         margin-bottom: 20px;
     }
 
     .text-content{
-        margin: 0 40px 0 40px;
+        /* margin: 0 40px 0 40px; */
 
         display: flex;
         flex-direction: column;
@@ -108,6 +117,26 @@
         align-items: center;
         width: 100%;
         padding: 10px;
+    }
+
+    @media(width < 1100px){
+
+        img{
+            max-width: 300px;
+        }
+
+    }
+
+    @media(width < 800px){
+        
+        #departments-card, #other-services-card{
+            
+            flex-direction: column;
+            align-items: center;
+
+        }
+        
+
     }
 
 </style>

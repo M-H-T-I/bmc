@@ -46,7 +46,7 @@
 <section id="services">
 
     <div>
-        <Title titleText = "What can we do for you?" page = "Home" subtitle = "You have a variety of options to choose from."/>
+        <Title titleText = "What can we do for you?" page = "Home" subtitle = "Years of experience. Years of Excellence."/>
     </div>
 
     <ServiceCard />
