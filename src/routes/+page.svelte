@@ -229,12 +229,6 @@
         margin: 90px 0 0 0;
     }
 
-    /* #partners img{
-        max-width: 25%;
-        min-width: 400px;
-
-        margin:100px 0 0 0;
-    } */
 
     @media(width < 1200px){
         #about-us #content-container{

@@ -51,7 +51,7 @@
 
     nav{
         width: 100vw;
-        padding: 20px;
+        padding: 5px 20px;
 
         display: flex;
         justify-content: space-between;
