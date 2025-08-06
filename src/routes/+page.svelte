@@ -63,10 +63,9 @@
     <Title titleText = "Our Story" subtitle = "Here's a sneak peak" page = "Home"/>
 
     <div 
+    id="content-container"
     style:display="flex"
     style:justify-content = "space-between">
-
-        <img src="/images/about-us.png" alt="the bmc team">
 
             <div 
             style:display="flex"
@@ -85,6 +84,8 @@
             
                 <GeneralBtn linkPath = "/about-us" linkText = "Read More"/>
             </div>
+
+            <img src="/images/about-us.png" alt="the bmc team">
             
     </div>
 
@@ -234,5 +235,17 @@
 
         margin:100px 0 0 0;
     } */
+
+    @media(width < 1200px){
+        #about-us #content-container{
+            flex-direction: column-reverse;
+            align-items: center; 
+        }
+
+        #about-us img{
+            min-width: 300px;
+            
+        }
+    }
 
 </style>
