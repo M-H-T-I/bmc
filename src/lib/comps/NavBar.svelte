@@ -50,7 +50,7 @@
 <style>
 
     nav{
-        width: 100%;
+        width: 100vw;
         padding: 20px;
 
         display: flex;
