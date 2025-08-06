@@ -139,4 +139,10 @@
         align-items: center;
     }
 
+    @media(width < 950px){
+        img{
+            display: none;
+        }
+    }
+
 </style>
