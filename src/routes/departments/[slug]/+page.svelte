@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type { PageProps } from "../$types";
     import Service from "$lib/comps/Service.svelte";
+    import Doctor from "$lib/comps/Doctor.svelte";
     
     let {data} = $props()
 
@@ -8,6 +8,7 @@
 
 </script>
 
+<div id="parent-container">
     <header>
 
         <h1 class="inter-400">{entry.cardInfo.departmentName}</h1>
@@ -17,7 +18,7 @@
 
     <section id="services">
 
-        <p class="inter-300">Services we provide:</p>
+        <h4 class="inter-400">Services we provide:</h4>
 
         <div id="service-grid">
             {#each entry.pageInfo.serviceList as service}
@@ -28,19 +29,29 @@
 
     </section>
 
-    <section id="doctor-grid">
+    <section id="doctors"> 
 
-        {#each entry.pageInfo.doctorList as doctor}
-            
-        {/each}
+        <h4 class="inter-400">Our Specialists: </h4>
+
+        <section id="doctors-grid">
+             {#each entry.pageInfo.doctorList as doctor}
+                <Doctor {...doctor} />
+        {   /each}
+        </section>
+       
 
     </section>
 
+    <section id="contact">
+        
+    </section>
+</div>
+
 <style>
 
+    
     header{
         height: 50vh;
-        padding: 20px;
 
         display: flex;
         flex-direction: column;
@@ -52,13 +63,17 @@
         font-size: 4.2rem;
     }
 
+    h4{
+        font-size: 1.8rem;
+        width: 100%;
+    }
     p{
-        font-size: 1.5rem;
+        width: 100%;
+        font-size: 1.4rem;
     }
 
-    #services{
+    #parent-container{
         padding: 20px;
-
     }
 
     #service-grid{
@@ -68,4 +83,15 @@
 
     }
 
+    #doctors{
+
+        margin: 50px 0 10px 0;
+        
+    }
+
+    #doctors-grid{
+        display: flex;
+        gap: 10px;
+        margin: 20px 0 0 0;
+    }
 </style>

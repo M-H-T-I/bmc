@@ -45,9 +45,9 @@
 
         {:else}
 
-            <div id="error-div">
+            <div id="error-div" style="margin: 20px auto;">
 
-                <h2 class="inter-400" style="margin: 20px auto;">No department with this name exists currently. Try something different.</h2>
+                <h2 class="inter-400" >No department with this name exists currently. Try something different.</h2>
                 <h4 class="inter-300">For any queries contact our team <a href="/contact">here</a></h4>
 
             </div>

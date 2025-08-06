@@ -19,11 +19,12 @@
         padding: 10px;
 
         border: 1px solid black;
-        border-radius: 10px;
+        border-radius: 8px;
     }
 
     p{
         font-size: 1.2rem;
+        width: 100%;
     }
 
 </style>

@@ -32,6 +32,8 @@
         position: fixed;
         top: 0;
         background-color: white;
+
+        z-index: 100;
     }
 
     img{
