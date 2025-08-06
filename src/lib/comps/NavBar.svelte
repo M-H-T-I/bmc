@@ -67,9 +67,7 @@
     img{
         width: 8rem;
 
-        position: relative;
-        left: 0;
-        top: 0;
+        
     }
 
     ul{
@@ -149,7 +147,7 @@
         }
 
         #open-menu, #close-menu{
-            display: inline;
+            display:inline-block;
         }
 
 
