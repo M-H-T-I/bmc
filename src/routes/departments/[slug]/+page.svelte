@@ -103,7 +103,7 @@
     }
     p{
         width: 100%;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     #img-grid{
@@ -130,6 +130,7 @@
         justify-content: center;
         margin: 20px 0 10px 0;
 
+        flex-wrap: wrap;
     }
 
     #doctors{
@@ -146,6 +147,7 @@
         justify-content: center;
         gap: 30px;
         margin: 20px 0 40px 0;
+        flex-wrap: wrap;
     }
 
     #contact{

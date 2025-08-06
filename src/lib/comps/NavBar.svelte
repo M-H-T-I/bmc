@@ -73,4 +73,6 @@
         color: var(--accent-red);
     }
 
+    @media 
+
 </style>

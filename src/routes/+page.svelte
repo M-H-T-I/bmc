@@ -223,6 +223,7 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        flex-wrap: wrap;
 
         margin: 90px 0 0 0;
     }

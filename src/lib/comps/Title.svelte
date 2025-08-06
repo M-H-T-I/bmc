@@ -38,6 +38,7 @@
         font-size: 36px;
         color: black;
         margin: 10px;
+        text-align: center;
     }
 
 </style>
