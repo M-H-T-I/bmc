@@ -72,5 +72,14 @@
     section{
         padding: 20px;
     }
+    
+
+    @media(width < 500px){
+
+        .parent{
+            max-width: 70%;
+        }
+
+    }
 
 </style>

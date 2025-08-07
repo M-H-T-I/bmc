@@ -98,10 +98,6 @@
 
     }
 
-    input:active{
-        border: 1px solid gray;
-    }
-
     #error-div{
         display: flex;
         flex-direction: column;
@@ -127,6 +123,19 @@
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
+    }
+
+    @media (width < 1000px){
+        header{
+            flex-direction: column;
+            gap:20px;
+        }
+
+        #services-grid{
+            flex-direction: column;
+            align-items: center;
+        }
+
     }
 
 </style>

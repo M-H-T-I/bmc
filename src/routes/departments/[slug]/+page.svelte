@@ -61,7 +61,7 @@
     <section id="contact">
 
         <h2 class="inter-300">
-            For any queries contact us: +92 311 2233262
+            For any queries contact us: <span>+92 311 2233262</span>
         </h2>
 
         <hr id="separator"/>
@@ -114,6 +114,8 @@
     }
 
     #img-grid img{
+        width:40%;
+        min-width: 300px;
         max-width: 500px;
     }
     
@@ -168,5 +170,24 @@
         opacity: 0.6;
         width: fit-content;
         margin-bottom: 20px;
+    }
+
+    @media(width < 800px){
+        #img-grid{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        h2{
+            font-size: 2.0rem;
+        }
+
+        h2 span{
+            display: block;
+        }
     }
 </style>
