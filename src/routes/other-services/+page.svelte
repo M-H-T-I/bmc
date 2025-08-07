@@ -5,9 +5,9 @@
     import {slugify} from "$lib/utils";
 
     let {data} = $props();
-    const depData: Entry[] = data.depData;
 
-
+    console.log(data);
+    const {depData} = data;
 
     let query: string = $state("");
     let filtered: Entry[] = $derived(query ? depData.filter((entry) => entry.cardInfo.departmentName.toLowerCase().includes(query.toLowerCase())) : depData);
