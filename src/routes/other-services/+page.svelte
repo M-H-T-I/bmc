@@ -15,7 +15,7 @@
 </script>
 
 <main>
-    <Title titleText = "Top Notch Expertise" page = "Departments" subtitle="We will give it our all to help heal you."/>
+    <Title titleText = "Top Notch Expertise" page = "Other Services" subtitle="We will give it our all to help heal you."/>
 </main>
 
 <section id="parent-service-container">
@@ -23,7 +23,7 @@
     <header>
 
             <h2 class="libre-baskerville-regular">
-                Our Departments
+                Services We Provide:
             </h2>
 
             <input name="search" placeholder="Search..." bind:value={query}>
@@ -39,7 +39,7 @@
             {#each filtered as {cardInfo : {departmentName, desc, imgPath, imgAlt}}}
 
 
-                <Department {departmentName} {desc} {imgAlt} {imgPath} pagePath = "/departments/{slugify(departmentName)}"/>
+                <Department {departmentName} {desc} {imgAlt} {imgPath} pagePath = "/other-services/{slugify(departmentName)}"/>
 
             {/each}
 

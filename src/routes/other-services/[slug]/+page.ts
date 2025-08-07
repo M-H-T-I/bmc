@@ -12,7 +12,7 @@ export const load: PageLoad = ({params}) =>{
 
     if(!entry) {
         // convert to redirect later
-        throw new Error("Department not found"); 
+        throw new Error("Service not found"); 
     }
     
     return {entry};
