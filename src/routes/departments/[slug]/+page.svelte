@@ -1,8 +1,6 @@
 <script lang="ts">
     import Service from "$lib/comps/Service.svelte";
     import Doctor from "$lib/comps/Doctor.svelte";
-    import CallBtn from "$lib/comps/contact section/CallBtn.svelte";
-    import GeneralBtn from "$lib/comps/GeneralBtn.svelte";
 
     let {data} = $props()
 

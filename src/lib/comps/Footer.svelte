@@ -187,6 +187,7 @@
     li{
         list-style-type: none;
         margin: 5px;
+        text-align: center;
     }
 
     a{
@@ -211,6 +212,22 @@
 
     hr{
         width: 100%;
+    }
+
+    @media(width<800px){
+        
+        #parent-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 20px;
+        }
+
+        #pages{
+            margin: 0;
+        }
+
     }
 
 </style>
