@@ -1,0 +1,9 @@
+{
+  "name": "my-sveltekit-app",
+  "main": "./.cloudflare/worker.js",
+  "compatibility_date": "2025-08-08",
+  "assets": {
+    "directory": ".cloudflare/assets",
+    "binding": "ASSETS"
+  }
+}

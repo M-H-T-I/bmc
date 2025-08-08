@@ -1,0 +1,1 @@
+import"./CWj6FrbW.js";import{ai as t,aj as s,aJ as l,aK as p,ag as o,ah as m}from"./pgkOdQgW.js";var c=m('<div class="svelte-11e9bwl"><p class="inter-500 svelte-11e9bwl"> </p></div>');function n(r,i){var a=c(),e=t(a),v=t(e,!0);s(e),s(a),l(()=>p(v,i.name)),o(r,a)}export{n as S};
