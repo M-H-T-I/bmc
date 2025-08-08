@@ -41,19 +41,6 @@
 
     </section>
 
-    <section id="doctors"> 
-
-        <h4 class="inter-400">Our Specialists: </h4>
-
-        <section id="doctors-grid">
-             {#each entry.pageInfo.doctorList as doctor}
-                <Doctor {...doctor} />
-        {   /each}
-        </section>
-       
-
-    </section>
-
     <!-- <hr /> -->
 
     <section id="contact">
@@ -128,25 +115,8 @@
         display: flex;
         gap: 10px;
         justify-content: center;
-        margin: 20px 0 10px 0;
+        margin: 20px 0 150px 0;
 
-        flex-wrap: wrap;
-    }
-
-    #doctors{
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 50px 0 90px 0;  
-        
-    }
-
-    #doctors-grid{
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        margin: 20px 0 40px 0;
         flex-wrap: wrap;
     }
 

@@ -2,7 +2,7 @@
     let {imgPath, imgAlt, departmentName, desc, pagePath} = $props();
 
     if(imgPath === ""){
-        imgPath = "/images/services/placeholder.webp";
+        imgPath = "/images/department/placeholder.webp";
         imgAlt = "placeholder image";
     }
 
@@ -45,6 +45,10 @@
 
         transform: translate(10px, -10px);
 
+    }
+    
+    img{
+        border-radius: 10px 10px 0 0;
     }
 
     h4{

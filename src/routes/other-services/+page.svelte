@@ -15,7 +15,7 @@
 </script>
 
 <main>
-    <Title titleText = "Top Notch Expertise" page = "Other Services" subtitle="We will give it our all to help heal you."/>
+    <Title titleText = "A Wide Variety Of Services" page = "Other Services" subtitle="Top Notch Expertise."/>
 </main>
 
 <section id="parent-service-container">
@@ -121,7 +121,8 @@
 
     #services-grid{
         display: flex;
-        gap: 10px;
+        justify-content: center;
+        gap: 20px;
         flex-wrap: wrap;
     }
 
