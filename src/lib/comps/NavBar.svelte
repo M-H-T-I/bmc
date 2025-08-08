@@ -1,19 +1,60 @@
 <script lang="ts">
+
+    import {afterNavigate} from "$app/navigation";
+    import { onMount } from "svelte";
+
+    let isMobile: boolean = $state(false);
+
+
+    onMount(() => {
+
+        const mediaQuery = window.matchMedia('(width < 900px)');
+        isMobile = mediaQuery.matches;
+
+        // check if window resized + if it is greater than 900 px and if ul is out of view
+        window.addEventListener("resize", () => {
+
+            isMobile = mediaQuery.matches
+
+            if(window.innerWidth > 899 && !isMobile){
+
+                const ul:HTMLUListElement = document.getElementsByTagName("ul")[0];
+                if(ul.style.right === "-1000px"){
+                    ul.style.right = "0px";
+                    console.log("ul back to norml")
+                }
+
+
+            }
+
+        });          
+
+    });
+
     let routeText: string[] = ["Home", "Departments", "Other Services", "About Us", "Contact Us"]
     let routeLink: string[] = ["", "departments", "other-services", "about-us", "contact"]
 
     function slideMenu(): void{
         const ul:HTMLUListElement = document.getElementsByTagName("ul")[0];
         ul.style = "right: 0px;"
-        console.log("done")
     }
 
     function closeMenu(): void{
+
         const ul:HTMLUListElement = document.getElementsByTagName("ul")[0];
-        ul.style.position = "absolute";
         ul.style.right = "-1000px";
-        console.log("done")
+
+        
     }
+
+    afterNavigate(() =>{
+
+        if (isMobile){
+            closeMenu();
+        }
+
+    });
+
 
 </script>
 
@@ -23,7 +64,7 @@
     <div id="list-container">
         <ul class="inter-500">
             
-            <button id="close-menu" on:click={closeMenu}>
+            <button id="close-menu" onclick={closeMenu}>
                 <span class="material-symbols-outlined">
                     close
                 </span>
@@ -39,7 +80,7 @@
     </div>
     
 
-    <button id="open-menu" on:click={slideMenu}>
+    <button id="open-menu" onclick={slideMenu}>
         <span class="material-symbols-outlined">
             menu
         </span>
@@ -48,7 +89,6 @@
 </nav>
 
 <style>
-
     nav{
         width: 100vw;
         padding: 5px 20px;
@@ -72,6 +112,7 @@
 
     ul{
         display: flex;
+        position: relative;
         justify-content: space-between;
         align-items: center;
 
@@ -128,11 +169,10 @@
     @media (width < 900px){
         ul{
 
-            position: fixed;
+            position: absolute;
             width: 100vw;
             height: 100vh;
             flex-direction: column;
-            position:absolute;
             top: 10px;
             right: -1000px;
 
