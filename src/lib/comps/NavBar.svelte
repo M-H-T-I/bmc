@@ -41,6 +41,7 @@
         const body: HTMLElement = document.body;
         const scrollY = window.scrollY;
         body.style.position = "fixed";
+        body.style.overflow = "hidden";
         body.style.top = `-${scrollY}px`;
 
         console.log("body scrolling disabled");
@@ -53,6 +54,7 @@
 
         document.body.style.position = "";
         document.body.style.top = "";
+        document.body.style.overflow = "scroll";
         window.scrollTo(0, scrollY);
 
         console.log("body scroll enabled");
