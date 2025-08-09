@@ -42,6 +42,8 @@
         const scrollY = window.scrollY;
         body.style.position = "fixed";
         body.style.top = `-${scrollY}px`;
+
+        console.log("body scrolling disabled");
     }
 
     function closeMenu(): void{
@@ -53,7 +55,7 @@
         document.body.style.top = "";
         window.scrollTo(0, scrollY);
 
-        
+        console.log("body scroll enabled");
     }
 
     afterNavigate(() =>{
@@ -100,7 +102,6 @@
 <style>
     nav{
         width: 100vw;
-        height:100vh;
         padding: 5px 20px;
 
         display: flex;
