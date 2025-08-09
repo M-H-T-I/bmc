@@ -91,6 +91,7 @@
 <style>
     nav{
         width: 100vw;
+        height:100vh;
         padding: 5px 20px;
 
         display: flex;
