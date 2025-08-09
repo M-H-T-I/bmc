@@ -86,6 +86,8 @@
         height: 100%;
         background-color: rgba(0, 0,0, 0.8);
 
+        overflow: scroll;
+
         position: fixed;
         top: 0;
         left: 0;
