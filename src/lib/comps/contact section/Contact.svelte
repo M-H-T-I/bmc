@@ -31,6 +31,7 @@
         background-image: url("/images/contact-background.png");
         background-attachment: fixed;
         background-size:cover;
+        background-position: center;
         background-repeat: no-repeat;
 
         padding: 60px;

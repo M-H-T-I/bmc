@@ -19,9 +19,9 @@
             if(window.innerWidth > 899 && !isMobile){
 
                 const ul:HTMLUListElement = document.getElementsByTagName("ul")[0];
+
                 if(ul.style.right === "-1000px"){
                     ul.style.right = "0px";
-                    console.log("ul back to norml")
                 }
 
 
@@ -37,12 +37,21 @@
     function slideMenu(): void{
         const ul:HTMLUListElement = document.getElementsByTagName("ul")[0];
         ul.style = "right: 0px;"
+
+        const body: HTMLElement = document.body;
+        const scrollY = window.scrollY;
+        body.style.position = "fixed";
+        body.style.top = `-${scrollY}px`;
     }
 
     function closeMenu(): void{
 
         const ul:HTMLUListElement = document.getElementsByTagName("ul")[0];
         ul.style.right = "-1000px";
+
+        document.body.style.position = "";
+        document.body.style.top = "";
+        window.scrollTo(0, scrollY);
 
         
     }
