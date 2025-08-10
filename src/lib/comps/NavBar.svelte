@@ -153,6 +153,10 @@
         cursor:pointer;
     }
 
+    button{
+        color: black;
+    }
+
     span{
         font-size: 3.2rem;
     }
