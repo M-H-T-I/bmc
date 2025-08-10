@@ -8,28 +8,29 @@
 
 
 </script>
-<a href={pagePath}>
+
 
     <div class="parent">
 
-        <img src={imgPath} alt={imgAlt} />
+        <a href={pagePath}>
 
-        <section class="text-content">
+            <img src={imgPath} alt={imgAlt} />
 
-            <h4 class="libre-baskerville-regular">
-                {departmentName}
-            </h4>
+            <section class="text-content">
 
-            <p class="inter-200">
-                {desc}
-            </p>
+                <h4 class="libre-baskerville-regular">
+                    {departmentName}
+                </h4>
 
-        </section>
+                <p class="inter-200">
+                    {desc}
+                </p>
 
+            </section>
+
+        </a>
+         
     </div>
-
-</a>
-
 
 <style>
 
@@ -49,6 +50,7 @@
     
     img{
         border-radius: 10px 10px 0 0;
+        width: 100%;
     }
 
     h4{
@@ -62,6 +64,7 @@
     }
     .parent{    
 
+        min-width: 250px;
         max-width: 450px;
 
         display: flex;
@@ -81,7 +84,7 @@
     @media(width < 500px){
 
         .parent{
-            max-width: 70%;
+            width: 70%;
         }
 
     }
