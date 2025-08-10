@@ -126,6 +126,7 @@
         position: relative;
         justify-content: space-between;
         align-items: center;
+        overflow: scroll;
 
         list-style-type: none;
 
