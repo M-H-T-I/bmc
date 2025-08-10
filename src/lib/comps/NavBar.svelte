@@ -40,9 +40,9 @@
 
         const body: HTMLElement = document.body;
         const scrollY = window.scrollY;
-        body.style.position = "fixed";
+
         body.style.overflow = "hidden";
-        body.style.top = `-${scrollY}px`;
+        body.style.height = "100%";
 
         console.log("body scrolling disabled");
     }
@@ -52,8 +52,6 @@
         const ul:HTMLUListElement = document.getElementsByTagName("ul")[0];
         ul.style.right = "-1000px";
 
-        document.body.style.position = "";
-        document.body.style.top = "";
         document.body.style.overflow = "scroll";
         window.scrollTo(0, scrollY);
 
