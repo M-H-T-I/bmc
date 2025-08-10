@@ -137,6 +137,10 @@
             align-items: center;
         }
 
+        #parent-service-container{
+            padding: 10px;
+        }
+
     }
 
 </style>
