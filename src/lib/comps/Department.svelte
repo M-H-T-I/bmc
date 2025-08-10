@@ -42,7 +42,7 @@
     }
 
     
-    a:hover{
+    .parent:hover{
 
         transform: translate(10px, -10px);
 
